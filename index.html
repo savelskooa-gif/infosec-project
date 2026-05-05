@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информационная безопасность | Проект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <div class="container header-container">
+            <h1><span class="highlight">🛡️ Безопасность</span> в Сети</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#rules">Правила</a></li>
+                    <li><a href="#examples">Виды мошенничества</a></li>
+                    <li><a href="#contact">Связь</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="hero">
+            <div class="container hero-content">
+                <h2>Как защитить себя от мошенников в интернете?</h2>
+                <p>Ежедневно тысячи людей становятся жертвами киберпреступников. Современное мошенничество — это не просто вирусы, а сложные психологические манипуляции и использование нейросетей. Этот проект поможет вам распознать ловушки до того, как в них попасть.</p>
+                <a href="#rules" class="btn-primary">Изучить правила</a>
+            </div>
+        </section>
+
+        <section id="rules" class="container section-padding">
+            <div class="section-header">
+                <h2>Базовые правила цифровой гигиены</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-icon">🔑</div>
+                    <h3>Сложные пароли</h3>
+                    <p>Не используйте дату рождения или "123456". Используйте менеджеры паролей и комбинации букв, цифр и спецсимволов.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">📱</div>
+                    <h3>2FA Авторизация</h3>
+                    <p>Самый надежный барьер. Даже зная пароль, взломщик не получит доступ без кода из SMS или приложения-аутентификатора.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">🧠</div>
+                    <h3>Критическое мышление</h3>
+                    <p>Если предложение звучит слишком заманчиво («Вы выиграли миллион») или пугающе («Ваш счет заблокирован») — это обман.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="examples" class="bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Распространенные схемы мошенничества</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>🎣 1. Фишинг и Смишинг</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Маскировка под официальные сервисы (банки, Госуслуги, соцсети) через почту или SMS.</p>
+                        <p><strong>Пример:</strong> Ссылка на "форму подтверждения данных", где нужно ввести номер карты и CVV-код.</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Проверяйте доменное имя. Например, <code>sberbank.ru</code> — оригинал, а <code>sber-online.id12.ru</code> — подделка.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>📞 2. Вишинг (Соц. инженерия)</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Психологическое давление по телефону. Мошенник представляется службой безопасности или полицией.</p>
+                        <p><strong>Пример:</strong> "С вашего счета переводят деньги. Срочно переведите их на безопасный счет".</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Положите трубку и сами перезвоните по официальному номеру банка, указанному на обороте карты.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>🤖 3. Дипфейки (Нейросети)</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Использование ИИ для подделки голоса или видеоизображения ваших знакомых.</p>
+                        <p><strong>Пример:</strong> Вам звонит "друг" с просьбой о помощи, голос полностью совпадает с оригиналом.</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Договоритесь с близкими о "кодовом слове" для экстренных ситуаций, которое не знает никто другой.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>💰 4. Крипто-аферы</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Обещание сверхприбыли от инвестиций в "уникальные токены" или "закрытые фонды".</p>
+                        <p><strong>Пример:</strong> "Вложи 1000 рублей сегодня и получи 10 000 через неделю благодаря нашему боту".</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Помните: гарантированная высокая доходность всегда означает либо огромный риск, либо обман.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>📦 5. Подставная доставка</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Продавец на доске объявлений предлагает перейти в мессенджер и присылает ссылку на "оплату".</p>
+                        <p><strong>Пример:</strong> Вы вводите данные карты на поддельном сайте сервиса доставки, и деньги списываются мошеннику.</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Никогда не покидайте чат торговой площадки. Оформляйте всё внутри официального приложения.
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>⬛ 6. Квишинг (QR-фишинг)</h3>
+                        </div>
+                        <p><strong>Суть:</strong> Наклейки с вредоносными QR-кодами поверх настоящих в общественных местах.</p>
+                        <p><strong>Пример:</strong> Вы сканируете код для оплаты парковки, а попадаете на фишинговый сайт.</p>
+                        <div class="protection-box">
+                            <strong>🛡️ Защита:</strong> Пользуйтесь официальными приложениями для оплаты и всегда проверяйте URL после сканирования.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="contact" class="container section-padding">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Служба анализа интернет-угроз</h2>
+                    <p>Столкнулись с подозрительной ссылкой, звонком или сообщением? Пришлите описание ситуации, и в рамках проекта будет проведен анализ угрозы. Ответ придет вам на почту.</p>
+                </div>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="23ab5ba3-674c-4a36-9d3a-22062c9c32a1">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <div class="input-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="name" id="name" required placeholder="Например, Алексей">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Ваш Email для ответа:</label>
+                        <input type="email" name="email" id="email" required placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message">Описание ситуации:</label>
+                        <textarea name="message" id="message" rows="5" required placeholder="Подробно опишите, что случилось..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Отправить на проверку ➔</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Проект по Информационной безопасности.</p>
+            <p class="author-info">Выполнил ученик 10 класса.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
