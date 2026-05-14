@@ -392,3 +392,40 @@ footer {
         padding: 50px 0;
     }
 }
+/* --- НОВЫЕ АНИМАЦИИ ДЛЯ ИНТЕРАКТИВНОСТИ --- */
+
+/* Классы для появления при скролле */
+.hidden-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Пульсация для главной кнопки */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 99, 235, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.pulse-button {
+    animation: pulse 2s infinite;
+}
+
+.pulse-button:hover {
+    animation: none; /* Отключаем пульсацию при наведении */
+}
+
+/* Эффект свечения для карточек при наведении */
+.card:hover {
+    box-shadow: 0 10px 25px -5px rgba(239, 68, 68, 0.15); /* Красноватое свечение (danger-color) */
+}
+
+.rule-card:hover {
+    box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.15); /* Синеватое свечение (primary-color) */
+}

@@ -27,30 +27,30 @@
 
     <main>
         <section id="about" class="hero">
-            <div class="container hero-content">
+            <div class="container hero-content hidden-element">
                 <h2>Как защитить себя от мошенников в интернете?</h2>
                 <p>Ежедневно тысячи людей становятся жертвами киберпреступников. Современное мошенничество — это не просто вирусы, а сложные психологические манипуляции и использование нейросетей. Этот проект поможет вам распознать ловушки до того, как в них попасть.</p>
-                <a href="#rules" class="btn-primary">Изучить правила</a>
+                <a href="#rules" class="btn-primary pulse-button">Изучить правила ➔</a>
             </div>
         </section>
 
         <section id="rules" class="container section-padding">
-            <div class="section-header">
+            <div class="section-header hidden-element">
                 <h2>Базовые правила цифровой гигиены</h2>
                 <div class="divider"></div>
             </div>
             <div class="rules-grid">
-                <div class="rule-card">
+                <div class="rule-card hidden-element">
                     <div class="rule-icon">🔑</div>
                     <h3>Сложные пароли</h3>
                     <p>Не используйте дату рождения или "123456". Используйте менеджеры паролей и комбинации букв, цифр и спецсимволов.</p>
                 </div>
-                <div class="rule-card">
+                <div class="rule-card hidden-element" style="transition-delay: 100ms;">
                     <div class="rule-icon">📱</div>
                     <h3>2FA Авторизация</h3>
                     <p>Самый надежный барьер. Даже зная пароль, взломщик не получит доступ без кода из SMS или приложения-аутентификатора.</p>
                 </div>
-                <div class="rule-card">
+                <div class="rule-card hidden-element" style="transition-delay: 200ms;">
                     <div class="rule-icon">🧠</div>
                     <h3>Критическое мышление</h3>
                     <p>Если предложение звучит слишком заманчиво («Вы выиграли миллион») или пугающе («Ваш счет заблокирован») — это обман.</p>
@@ -60,12 +60,12 @@
 
         <section id="examples" class="bg-light section-padding">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header hidden-element">
                     <h2>Распространенные схемы мошенничества</h2>
                     <div class="divider"></div>
                 </div>
                 <div class="grid">
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header">
                             <h3>🎣 1. Фишинг и Смишинг</h3>
                         </div>
@@ -76,7 +76,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden-element" style="transition-delay: 100ms;">
                         <div class="card-header">
                             <h3>📞 2. Вишинг (Соц. инженерия)</h3>
                         </div>
@@ -87,7 +87,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden-element" style="transition-delay: 200ms;">
                         <div class="card-header">
                             <h3>🤖 3. Дипфейки (Нейросети)</h3>
                         </div>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden-element">
                         <div class="card-header">
                             <h3>💰 4. Крипто-аферы</h3>
                         </div>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden-element" style="transition-delay: 100ms;">
                         <div class="card-header">
                             <h3>📦 5. Подставная доставка</h3>
                         </div>
@@ -120,7 +120,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden-element" style="transition-delay: 200ms;">
                         <div class="card-header">
                             <h3>⬛ 6. Квишинг (QR-фишинг)</h3>
                         </div>
@@ -134,7 +134,7 @@
             </div>
         </section>
       
-        <section id="contact" class="container section-padding">
+        <section id="contact" class="container section-padding hidden-element">
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h2>Служба анализа интернет-угроз</h2>
@@ -173,5 +173,17 @@
         </div>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden-element');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>
